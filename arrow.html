@@ -9,10 +9,28 @@
 
 <body>
     <script>
-        const variable = (a, b) => a * b;
-        const result = variable(8, 9);
-        console.log("hello this is the multiplication " + result)
-        console.log(`hello this is the multiplication${result}`)
+        const variable = (a, b) => a + b;
+        const result = variable(81, 99);
+        console.log("this is the addition " + result)
+        console.log(`this is the addition ${result}`)
+
+        const ages = [20, 30, 22, 15, 70]
+        for (const age of ages) {
+            console.log(age);
+        }
+        const length = ages.map((age => ages.length))
+
+        const numbers = [2, 6, 10, 45, 33, 1]
+        const underten = numbers.map((ten => ten < 10))
+        console.log(underten)
+
+        const names = ["munazza", "maria", "hania", "azka"]
+        const Name = names.map((namess => namess == "munazza"))
+        console.log(Name)
+
+        const findnum = [100,456,291,654,222,768]
+        const Num = findnum.filter((num) =>num > 300)
+        console.log(Num)
     </script>
 </body>
 
