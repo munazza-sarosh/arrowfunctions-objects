@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+
+<body>
+    <script>
+        const person = [
+            {
+                "name": "munazza",
+                "lastname": "sarosh",
+                "age": 20
+            },
+            {
+                "name": "maria",
+                "lastname": "ali",
+                "age": 24
+            },
+            {
+                "name": "afaaf",
+                "lastname": "maaz",
+                "age": 27
+            }
+        ]
+
+        const table = document.createElement("table");
+
+        person.forEach(function (students) {
+
+            const tr = document.createElement("tr");
+
+            Object.values(students).forEach(function (value) {
+                const td = document.createElement("td");
+
+                td.innerHTML = value;
+
+                tr.appendChild(td);
+
+            });
+            table.appendChild(tr);
+        });
+        document.body.appendChild(table);
+    </script>
+</body>
+
+</html>
