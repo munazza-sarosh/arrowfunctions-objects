@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        const students =
+        {
+            "name": "munazza",
+            "age": 20,
+            "status": "single",
+            "class": "bscs",
+            "city": "karachi",
+            "phoneno": +923316317948,
+        }
+        console.log(students.name);
+        console.log(students.age);
+        console.log(students.status);
+        console.log(students.class);
+        console.log(students.city);
+        console.log(students.phoneno)
+
+        const cars =
+        {
+            "model": 2026,
+            "company": "honda",
+            "color": "white"
+        }
+        console.log(cars.model);
+        console.log(cars.company);
+        console.log(cars.color);
+
+        const person = {
+            firstname: "munazza",
+            lastname: "sarosh",
+            age: 20,
+        };
+
+        document.getElementById("demo").innerHTML = person["firstname"] + person["lastname"] + " is " + person["age"];
+    </script>
+</body>
+
+</html>
