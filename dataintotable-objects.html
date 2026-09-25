@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data through table</title>
+</head>
+
+<body>
+    <script>
+
+        // const table = document.createElement("table");
+        // const row = document.createElement("tr")
+        // const td1 = document.createElement("td")
+        // const td2 = document.createElement("td")
+        // const td3 = document.createElement("td")
+
+        // row.appendChild(td3)
+        // row.appendChild(td2)
+        // row.appendChild(td1)
+        // table.appendChild(row)
+        // document.body.appendChild(table)
+
+        const person = [
+            {
+                "name": "munazza",
+                "lastname": "sarosh",
+                "age": 20
+            },
+            {
+                "name": "maria",
+                "lastname": "ali",
+                "age": 24
+            },
+            {
+                "name": "afaaf",
+                "lastname": "maaz",
+                "age": 27
+            }
+        ]
+        const table = document.createElement("table");
+        table.setAttribute("border","23")
+        table.setAttribute("id","tables")
+        // const row = document.createElement("tr")
+        // const td1 = document.createElement("td")
+        // const td2 = document.createElement("td")
+        // const td3 = document.createElement("td")
+
+        // row.appendChild(td3)
+        // row.appendChild(td2)
+        // row.appendChild(td1)
+        // table.appendChild(row)
+        // document.body.appendChild(table)
+
+        person.forEach(person_ => {
+            const row = document.createElement("tr")
+
+            const td1 = document.createElement("td")
+            td1.innerHTML = person_.name;
+            const td2 = document.createElement("td")
+            td2.innerHTML = person_.lastname;
+            const td3 = document.createElement("td")
+            td3.innerHTML = person_.age;
+
+            row.appendChild(td1)
+            row.appendChild(td2)
+            row.appendChild(td3)
+            table.appendChild(row)
+            
+        }
+        )
+        document.body.appendChild(table)
+    </script>
+</body>
+
+</html>
