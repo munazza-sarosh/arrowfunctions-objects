@@ -8,13 +8,23 @@
 </head>
 
 <body>
-    <form action="">
+    <!-- <form action="">
         <input type="checkbox" id="box" name="subject" value="math"> math
-    </form>
+    </form> -->
     <script>
         const checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.name = "subject";
+        checkbox.value = "math";
+        const label = document.createElement("label");
+        label.innerHTML = " Math";
+
+        document.body.appendChild(checkbox);
+        document.body.appendChild(label);
+
         const ul = document.createElement("ul");
         const li = document.createElement("li");
+
         li.innerHTML = "breakfast"
         ul.appendChild(li)
         document.body.appendChild(ul)
